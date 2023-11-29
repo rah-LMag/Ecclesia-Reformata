@@ -1,0 +1,232 @@
+
+/* Define que todos os elementos HTML do documento devem usar a fonte Verdana, Geneva, Tahoma ou uma fonte genérica sans-serif. */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Remove margens e preenchimentos padrão do corpo e define a altura da linha para 1.6 vezes o tamanho da fonte. Define a cor do texto como preto. */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Estiliza o cabeçalho da página, definindo a cor de fundo como preto, a cor do texto como branco e centralizando o conteúdo. Usa uma grade (grid) para o layout. */
+header {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+/* Define o layout da área que contém o logotipo e o título, utilizando uma grade para ter duas colunas, uma para o logotipo e outra para o título, e centraliza os itens horizontal e verticalmente. */
+.logo-title-container {
+    display: grid;
+    grid-template-columns: auto auto; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Define a largura da barra de navegação como 100%. */
+nav{
+width: 100%;
+}
+
+/* Define a largura da barra de navegação como 100%. */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Define uma margem entre os itens da lista de navegação. */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Define o estilo de hover para os itens da lista de navegação, adicionando um sublinhado e alterando a cor para darkcyan quando o mouse está sobre eles. */
+li :hover{
+    text-decoration:underline;
+    color: darkcyan;
+}
+
+/* Remove a decoração de texto (como sublinhado) dos links de navegação e define a cor do texto como branco. */
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estiliza o rodapé, definindo a cor de fundo como preto, a cor do texto como branco, centralizando o conteúdo e usando uma grade com duas colunas. */
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* adiciona identação para as section's do footer */
+footer section {
+    padding: 10px;
+}
+
+/* Define a cor de fundo da área principal como r=226, g=226, b=226 e a cor do texto como preto. */
+main {
+    background-color:rgb(226, 226, 226);
+    color: black;
+}
+
+/* Define estilos para um componente de secções de textos, adicionando espaçamento interno de 30 pixels e espaçamento entre palavras de 2 pixels. */
+.accordion {
+    padding: 30px;
+    word-spacing: 2px;
+}
+
+/* Estiliza um elemento com a classe "identa", adicionando espaçamento/identação interno de 0 para cima e para baixo e para os lados 30 pixels. */
+.identa {
+    padding: 0 30px;
+}
+
+/* Define um espaçamento inferior de 20 pixels para elementos com a classe "section". */
+.section {
+    margin-bottom: 20px;
+}
+
+/* Estiliza o conteúdo de seções, definindo-o inicialmente como invisível (display: none) e adicionando espaçamento interno de 10 pixels. */
+.section-content {
+    display: none;
+    padding: 10px;
+}
+
+/* Define a cor do texto dos links dentro de elementos <strong> (negrito) como darkcyan. */
+strong a {
+    color:darkcyan ;
+}
+
+/* Estiliza um carrossel, centralizando-o na página, definindo a largura como 99.2% e removendo qualquer preenchimento. */
+#carouselExampleInterval {
+    margin: 0 auto;
+    width: 99, 2%;
+    height: auto;
+    padding: 0 !important;
+
+}
+
+/* Estiliza o conteúdo interno do carrossel, fazendo com que ocupe 100% da largura, tenha altura automática e utilize um layout flexível. */
+.carousel-inner {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+/* Adiciona uma transição de 2 segundos aos itens do carrossel. */
+#carouselExampleInterval .carousel-item{
+    transition: 2s;
+}
+
+/* Estiliza um botão "rolar para o topo", posicionando-o fixamente no canto inferior direito da página com uma cor de fundo azul (#007BFF) e texto branco (#fff). */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Adiciona um efeito de hover ao botão "rolar para o topo", alterando a cor de fundo para #2E7FEA quando o mouse está sobre ele. */
+#scrollToTopBtn:hover {
+    background-color: #2E7FEA;
+}
+
+/* Estiliza um menu móvel, definindo o cursor como ponteiro e criando um ícone de menu com três barras horizontais de 32 pixels de largura, 2 pixels de altura e margens de 8 pixels. */
+.mobile-menu {
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+/* Inicialmente, oculta o botão móvel com o ID "btn-mobile". */
+#btn-mobile {
+    display: none;
+}
+
+/* Media query para telas com largura máxima de 650 pixels */
+@media(max-width: 650px) {
+    
+    /* Ajusta o layout da área do logotipo e título dentro do cabeçalho para três colunas iguais */
+    header .logo-title-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Torna visível o botão móvel com o ID "btn-mobile" */
+    #btn-mobile {
+        display: block;
+    }
+
+    /* Estiliza a lista de navegação para telas menores */
+    .nav-list {
+        width: 100%;
+        top: 70px;
+        background: rgb(0, 0, 7);
+        right: 0;
+        height: 0;
+        transition: .6s;
+        z-index: 100;
+        visibility: hidden;
+        overflow-y: hidden;
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        align-items: center;
+    }
+
+    /* Quando a navegação está ativa, ajusta a altura automaticamente e torna visível */
+    #nav.active .nav-list {
+        height: auto; 
+        visibility: visible;
+    }
+
+    /* Estiliza os itens da lista de navegação para melhor espaçamento */
+    .nav-list a {
+        padding: 0.5rem 0.8rem;
+        margin: 0.5rem 0; /* Adicionado margin para espaçamento vertical entre os links */
+    }
+
+    /* Estiliza o botão móvel */
+    #btn-mobile {
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: white;
+    }
+}
+
+/* Media query para telas com largura máxima de 465 pixels */
+@media(max-width: 465px) {
+
+    /* Reduz o tamanho do texto na lista de navegação para melhor adaptação em telas menores */
+    .nav-list {
+        font-size: 10px;
+    }
+}

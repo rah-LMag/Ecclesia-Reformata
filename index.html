@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecclesia Reformata</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <!-- Logo e Título -->
+        <div class="logo-title-container">
+            <div class="logo"><img src="src/imgs/download.png" alt="Logo da Igreja Presbiteriana"></div>
+            <!-- Estiliza o nome do site inline para que o código no css não afete aqui pela hierarquia -->
+            <h1 style="font-family:'Times New Roman', Times, serif;">Ecclesia Reformata</h1>
+            <button id="btn-mobile"> &#9776; </button>
+        </div>
+        <nav id="nav">
+            <ul class="nav-list">
+                <!-- Navegação e links de navegação -->
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sermao1">Qualificações</a></li>
+                <li><a href="#sermao2">Humanidade</a></li>
+                <li><a href="#sermao3">Graça</a></li>
+                <li><a href="#sermao4">Libertos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- carrossel de imagens -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="src/imgs/resurrection-5019777_1280.jpg" class="d-block w-100" alt="3 Cruzes sendo vistas de dentro de uma caverna">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="src/imgs/wedding-rings-1284225_1280.jpg" class="d-block w-100" alt="alianças em cima de uma biblia">
+                </div>
+                <div class="carousel-item">
+                    <img src="src/imgs/pray-1359100_1280.jpg" class="d-block w-100" alt="sombra humana orando com as mãos juntas">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> <br> <br>
+
+        <!-- Área de Textos -->
+        <div class="accordion">
+            <!-- Primeira Seção -->
+            <div id="section">
+                <!-- Conteúdo da Primeira Seção -->
+                <div class="content">
+                    <h1>
+                        Precisamos de uma nova reforma? <br> <hr> 
+                    </h1>
+                    <p> <!-- Links para saber significado da palavra mandando abrir em outra guia -->
+                        Em 31 de Outubro de 1517, Martinho Lutero, monge agostiniano, afixou nas portas da Igreja de Wittenberg, na cidade de Wittenberg na Alemanha, suas famosas 95 teses contra a venda de <strong><a href="https://www.google.com/search?q=indulgencia&oq=indulgencia&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDMxMDNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"  target="_blank" >indulgências</a></strong>. As <strong><a href="https://www.google.com/search?q=indulgencia&oq=indulgencia&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDMxMDNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"  target="_blank" >indulgências</a></strong> foi uma forma de a Igreja Católica Romana (ICR) extorquir dinheiro dos fieis em troca da passagem de um ente querido, morto que jazia sua alma na <strong><a href="https://www.google.com/search?q=penit%C3%AAncia+significado+b%C3%ADblico&sca_esv=585881890&sxsrf=AM9HkKm-Ot6zXOjO9ZBm_4VQ0flYQlEqPQ%3A1701175943469&ei=h-JlZZmfHJuS5OUPi425qAQ&ved=0ahUKEwjZ_r2e3uaCAxUbCbkGHYtGDkUQ4dUDCBA&uact=5&oq=penit%C3%AAncia+significado+b%C3%ADblico&gs_lp=Egxnd3Mtd2l6LXNlcnAiIHBlbml0w6puY2lhIHNpZ25pZmljYWRvIGLDrWJsaWNvMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRI9wxQmAhYxgpwAXgBkAEAmAGZAaABogKqAQMwLjK4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIHECMYsAIYJ-IDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp"  target="_blank" >penitência</a></strong> do purgatório, para ir direto para o céu. Purgatório foi uma <strong> <a href="https://www.google.com/search?q=heresia&sca_esv=585881890&sxsrf=AM9HkKnx2-IyLdzbaILdtgLRc8T5gen94g%3A1701176340731&ei=FORlZZeZLNaR5OUPkbiF6A8&oq=here&gs_lp=Egxnd3Mtd2l6LXNlcnAiBGhlcmUqAggAMgoQIxiABBiKBRgnMgsQABiABBiKBRixAzILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQLhixAxiABDIIEAAYgAQYsQMyDhAuGIAEGLEDGMcBGNEDMgUQABiABDIFEC4YgAQyCBAuGIAEGNQCSPwRUPQHWLcMcAF4AZABAJgBkgGgAbUEqgEDMC40uAEByAEA-AEBqAIUwgIHECMY6gIYJ8ICExAAGIAEGIoFGOoCGLQCGEPYAQHCAgoQABiABBiKBRhDwgIREC4YgAQYsQMYgwEYxwEY0QPCAgsQLhiABBjHARjRA8ICChAuGIAEGIoFGEPCAggQLhiABBixA8ICDhAuGIAEGIoFGLEDGIMBwgIOEAAYgAQYsQMYgwEYyQPCAggQABiABBiSA-IDBBgAIEGIBgG6BgYIARABGAE&sclient=gws-wiz-serp"  target="_blank" > heresia</a></strong> que surgiu na ICR em 1170 como sendo um lugar entre o inferno o céu, não tinha nenhuma base bíblica, pois a igreja tinha se distanciado da Verdade das Sagradas Escrituras; dai a <strong> <a href="https://www.google.com/search?q=heresia&sca_esv=585881890&sxsrf=AM9HkKnx2-IyLdzbaILdtgLRc8T5gen94g%3A1701176340731&ei=FORlZZeZLNaR5OUPkbiF6A8&oq=here&gs_lp=Egxnd3Mtd2l6LXNlcnAiBGhlcmUqAggAMgoQIxiABBiKBRgnMgsQABiABBiKBRixAzILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQLhixAxiABDIIEAAYgAQYsQMyDhAuGIAEGLEDGMcBGNEDMgUQABiABDIFEC4YgAQyCBAuGIAEGNQCSPwRUPQHWLcMcAF4AZABAJgBkgGgAbUEqgEDMC40uAEByAEA-AEBqAIUwgIHECMY6gIYJ8ICExAAGIAEGIoFGOoCGLQCGEPYAQHCAgoQABiABBiKBRhDwgIREC4YgAQYsQMYgwEYxwEY0QPCAgsQLhiABBjHARjRA8ICChAuGIAEGIoFGEPCAggQLhiABBixA8ICDhAuGIAEGIoFGLEDGIMBwgIOEAAYgAQYsQMYgwEYyQPCAggQABiABBiSA-IDBBgAIEGIBgG6BgYIARABGAE&sclient=gws-wiz-serp"  target="_blank" > heresia</a></strong> foi se fortalecendo e se somaram a venda das <strong><a href="https://www.google.com/search?q=indulgencia&oq=indulgencia&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDMxMDNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"  target="_blank" >indulgências</a></strong>.
+                        <br> <br>
+                        Este tributo "celeste", as <strong><a href="https://www.google.com/search?q=indulgencia&oq=indulgencia&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDMxMDNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"  target="_blank" >indulgências</a></strong>, foram somatórias para a construção da Basílica de São Pedro. O povo vivia na pobreza e os mais ricos com medo do purgatório dava propriedades e som astronômicas para se livrarem do purgatório ou do inferno.
+                        <br> <br>
+                        Martinho Lutero, era professor em teologia na Universidade de Wittenberg e <strong> <a href="https://www.google.com/search?q=p%C3%A1roco&sca_esv=585881890&sxsrf=AM9HkKnVXuLC6LPtCM8k-5aod-NU13KywA%3A1701176042980&ei=6uJlZbunO6Xb1sQP25u1kAE&ved=0ahUKEwi7xPfN3uaCAxWlrZUCHdtNDRIQ4dUDCBA&uact=5&oq=p%C3%A1roco&gs_lp=Egxnd3Mtd2l6LXNlcnAiB3DDoXJvY28yBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESIcKUKUGWKUGcAF4AZABAJgBkgGgAZIBqgEDMC4xuAEDyAEA-AEB-AECqAIRwgIHECMY6gIYJ8ICExAAGIAEGIoFGOoCGLQCGEPYAQHCAhkQLhiABBiKBRjUAhjIAxjqAhi0AhhD2AECwgIcEC4YgAQYigUYxwEYrwEYyAMY6gIYtAIYQ9gBAuIDBBgAIEGIBgG6BgYIARABGAG6BgYIAhABGAg&sclient=gws-wiz-serp"  target="_blank" >pároco</a></strong> da Igreja. Além de ter estudado direito, por medo do inferno e procurando socorro espiritual se empenhou em estudar a Bíblia, não somente na <strong><a href="https://www.google.com/search?q=vulgata+significado&sca_esv=585881890&sxsrf=AM9HkKlT5-swzEPBxCmtehPn8VODRyMe9g%3A1701174798621&ei=Dt5lZdbBJaed5OUPjsaKwAM&oq=vulgata&gs_lp=Egxnd3Mtd2l6LXNlcnAiB3Z1bGdhdGEqAggBMgsQLhiDARixAxiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAuGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjVH1DGBljcEXABeAGQAQCYAcEBoAGcB6oBAzAuN7gBA8gBAPgBAagCFMICBxAjGOoCGCfCAhMQABiABBiKBRjqAhi0AhhD2AEBwgIVEC4YgAQYigUY6gIYtAIYChhD2AEBwgIKEAAYgAQYigUYQ8ICCxAAGIAEGLEDGIMBwgILEC4YgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICDhAAGIAEGIoFGLEDGIMBwgIIEAAYgAQYsQPCAg4QLhiABBiKBRixAxiDAcICCxAuGIAEGMcBGNEDwgIREC4YgwEYxwEYsQMY0QMYgATCAhQQLhiABBiXBRjcBBjeBBjgBNgBAsICCBAuGIAEGLEDwgIaEC4YgwEYsQMYgAQYlwUY3AQY3gQY4ATYAQLiAwQYACBBiAYBugYGCAEQARgBugYGCAIQARgU&sclient=gws-wiz-serp"  target="_blank" > Vulgata</a></strong> (latim), mas também nos originais, pois muitos se empenhavam para voltar a origens naquela época. Foi que lendo a <strong><a href="https://www.google.com/search?q=epistola&sca_esv=585881890&sxsrf=AM9HkKlfUVJi_mMjqrEvAW8VXXvICqMt8Q%3A1701176096272&ei=IONlZcKOELPl1sQPlMShOA&oq=epistp&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmVwaXN0cCoCCAAyDRAAGIAEGA0YsQMYsQMyDRAuGA0Y1AIYsQMYgAQyBxAAGIAEGA0yBxAuGIAEGA0yBxAuGIAEGA0yBxAuGIAEGA0yBxAuGA0YgAQyBxAuGIAEGA0yBxAAGIAEGA0yBxAuGIAEGA1IghlQygJYyg5wAXgBkAEAmAH1AaAB0weqAQUwLjUuMbgBA8gBAPgBAagCFMICBxAjGOoCGCfCAhMQABiABBiKBRjqAhi0AhhD2AEBwgILEAAYgAQYsQMYgwHCAgUQABiABMICEBAAGIAEGIoFGLEDGIMBGArCAgQQABgDwgIFEC4YgATCAhQQLhiABBiKBRixAxiDARjHARjRA8ICERAuGIAEGLEDGIMBGMcBGNEDwgIXEC4YgAQYigUYsQMYgwEYxwEYrwEYjgXCAg4QABiABBiKBRixAxiDAcICCBAAGIAEGLEDwgINEAAYgAQYsQMYRhj5AcICCxAAGIAEGIoFGLEDwgIkEAAYgAQYsQMYRhj5ARiXBRiMBRjdBBhGGPQDGPUDGPYD2AECwgILEC4Y1AIYsQMYgATiAwQYACBBiAYBugYGCAEQARgBugYGCAIQARgT&sclient=gws-wiz-serp"  target="_blank" >Epistola</a></strong> aos Romanos, deparou-se com a frase "o justo viverá por fé" e "o poder de Deus se revelou no Evangelho" (Rm 1.16,17), sendo liberto das amarras das <strong><a href="https://www.google.com/search?q=penit%C3%AAncia+significado+b%C3%ADblico&sca_esv=585881890&sxsrf=AM9HkKm-Ot6zXOjO9ZBm_4VQ0flYQlEqPQ%3A1701175943469&ei=h-JlZZmfHJuS5OUPi425qAQ&ved=0ahUKEwjZ_r2e3uaCAxUbCbkGHYtGDkUQ4dUDCBA&uact=5&oq=penit%C3%AAncia+significado+b%C3%ADblico&gs_lp=Egxnd3Mtd2l6LXNlcnAiIHBlbml0w6puY2lhIHNpZ25pZmljYWRvIGLDrWJsaWNvMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRI9wxQmAhYxgpwAXgBkAEAmAGZAaABogKqAQMwLjK4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIHECMYsAIYJ-IDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp"  target="_blank" >penitências</a></strong> infundidas por <strong> <a href="https://www.google.com/search?q=heresia&sca_esv=585881890&sxsrf=AM9HkKnx2-IyLdzbaILdtgLRc8T5gen94g%3A1701176340731&ei=FORlZZeZLNaR5OUPkbiF6A8&oq=here&gs_lp=Egxnd3Mtd2l6LXNlcnAiBGhlcmUqAggAMgoQIxiABBiKBRgnMgsQABiABBiKBRixAzILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQLhixAxiABDIIEAAYgAQYsQMyDhAuGIAEGLEDGMcBGNEDMgUQABiABDIFEC4YgAQyCBAuGIAEGNQCSPwRUPQHWLcMcAF4AZABAJgBkgGgAbUEqgEDMC40uAEByAEA-AEBqAIUwgIHECMY6gIYJ8ICExAAGIAEGIoFGOoCGLQCGEPYAQHCAgoQABiABBiKBRhDwgIREC4YgAQYsQMYgwEYxwEY0QPCAgsQLhiABBjHARjRA8ICChAuGIAEGIoFGEPCAggQLhiABBixA8ICDhAuGIAEGIoFGLEDGIMBwgIOEAAYgAQYsQMYgwEYyQPCAggQABiABBiSA-IDBBgAIEGIBgG6BgYIARABGAE&sclient=gws-wiz-serp"  target="_blank" > heresias</a></strong> da ICR, Lutero começou a escrever contra as <strong><a href="https://www.google.com/search?q=indulgencia&oq=indulgencia&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDMxMDNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"  target="_blank" >indulgências</a></strong> e também a ensinar sobre a Salvação pela Graça mediante a fé que é um dom de Deus (Ef 2.8,9).
+                        <br> <br>
+                        Hoje, não creio precisarmos de uma nova reforma, mas de voltar aos mesmo princípios que levaram a Igreja passar pela <strong> <a href="https://www.google.com/search?q=reforma+protestante&oq=reforma+protestante&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORixAxiABDIKCAEQABixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIGCAYQRRg8MgYIBxBFGDzSAQgzNDU1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"  target="_blank" >Reforma</a></strong>: Sola Scriptura (Somente as Escrituras). E isto é sim matéria de fé, mas não fé num acaso, num salto no escuro, fé fundamentada nas Escrituras e numa vida de piedade na   dependência  do Espírito Santo. Ele, o Espírito Santo, guia-nos na Verdade (Jo 14.16-30). Ele não traz nada além ou aquém das Escrituras, mas aplica no coração dos salvos, a vida que Cristo doou na Cruz.
+                        <br> <br>
+                        É na ação <strong> <a href="https://www.google.com/search?q=trinit%C3%A1ria&sca_esv=585881890&sxsrf=AM9HkKnNM4KO0xnZNKWxwFK_nyfwHkjuNQ%3A1701176404814&ei=VORlZfiZMcnO5OUPwtGhiAg&ved=0ahUKEwj4k7z63-aCAxVJJ7kGHcJoCIEQ4dUDCBA&uact=5&oq=trinit%C3%A1ria&gs_lp=Egxnd3Mtd2l6LXNlcnAiC3RyaW5pdMOhcmlhMgUQABiABDIFEAAYgAQyBRAAGIAEMgQQABgeMgQQABgeMgYQABgeGA8yBhAAGB4YDzIEEAAYHjIGEAAYHhgPMgYQABgFGB5I6WJQwAdYnl5wBXgBkAEAmAGCAqABuA-qAQYwLjEyLjG4AQPIAQD4AQH4AQKoAhHCAgcQIxjqAhgnwgITEAAYgAQYigUY6gIYtAIYQ9gBAcICGRAuGIAEGIoFGNQCGMgDGOoCGLQCGEPYAQLCAhwQLhiABBiKBRjHARivARjIAxjqAhi0AhhD2AECwgIKECMYgAQYigUYJ8ICChAuGIAEGIoFGCfCAgsQABiABBixAxiDAcICBRAuGIAEwgIREC4YgAQYsQMYgwEYxwEY0QPCAhQQLhiABBiKBRixAxiDARjHARjRA8ICChAAGIAEGIoFGEPCAggQABiABBixA8ICDhAAGIAEGIoFGLEDGIMBwgILEAAYgAQYigUYsQPCAgsQLhiABBixAxiDAcICCBAuGIAEGLEDwgIIEC4YsQMYgATCAhQQLhiABBixAxiDARjHARjRAxjUAsICCxAuGIAEGMcBGK8BwgIHEAAYgAQYCsICDhAuGIAEGLEDGIMBGNQCwgIKEAAYgAQYsQMYCsICDRAAGIAEGLEDGIMBGArCAgcQABiABBgNwgIHEC4YgAQYDcICFhAuGIAEGA0YlwUY3AQY3gQY4ATYAQPCAgoQABiABBhGGPkBwgIhEAAYgAQYRhj5ARiXBRiMBRjdBBhGGPQDGPUDGPYD2AEEwgIMEAAYgAQYChhGGPkBwgIjEAAYgAQYChhGGPkBGJcFGIwFGN0EGEYY9AMY9QMY9gPYAQTCAgYQABgeGArCAggQABgHGB4YCsICBhAAGAcYHsICCxAAGAcYHhjxBBgKwgIIEAAYCBgHGB7CAg0QABgIGAcYHhjxBBgK4gMEGAAgQYgGAboGBggBEAEYAboGBggCEAEYCLoGBggDEAEYFLoGBggEEAEYEw&sclient=gws-wiz-serp"  target="_blank" >trinitária</a></strong>, do Pai, do Filho e do Espírito Santo, que o salvo vive e desfruta de novas condições diárias para enfrentar a si mesmo, o mundo caído e as ações tentadoras do  diabo (1 Jo 5.4,5). Não temos que nos envergonhar do Evangelho que é poder de Deus (Rm 1.16), mas envergonhar de nossos pecados, ou melhor, ficar livre da culpa, confessando a aquele que é fiel, Jesus Cristo, o Justo (1 Jo 1.8 e 2.1), pois Ele suportou toda nossa ofensa contra Deus e contra o próximo na Cruz, e nos dá a alegria da salvação, para andarmos não nas trevas, mas de fé em fé, de glória em glória, na graça sobre graça (Rm 1.17; Jo 1.16;2Co 3.18).
+                        <br> <br>
+                        Por isto, nosso texto do título desta pastoral, é de suma importância. O culto é vida, nossa vida deve ser um culto completo. Deve haver em nós um disposição de se renovar a cada dia pelo renovar de nossa mente e coração na ação bondosa de Deus que nos assiste a саda manhã.
+                        <br> <br>
+                        O nosso lidar com as coisas desta vida, em todas as suas esferas de ação: pessoal, familiar, religiosa, politica, social, trabalho e estudos; devem ser levado aos "Pés" do Nosso Senhor e Salvador Jesus Cristo, a fim de que em tudo Ele tenha a <strong><a href="https://www.google.com/search?q=primazia+&sca_esv=585881890&sxsrf=AM9HkKn-sFX2-NDPx__tkdJ0EcO2tyKfTQ%3A1701176490810&ei=quRlZdmFMbLA5OUPvtyWoAM&ved=0ahUKEwjZgr2j4OaCAxUyILkGHT6uBTQQ4dUDCBA&uact=5&oq=primazia+&gs_lp=Egxnd3Mtd2l6LXNlcnAiCXByaW1hemlhIDIOEC4YrwEYxwEYgAQYjgUyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyCxAAGIAEGLEDGIMBMggQABiABBixAzIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyHRAuGK8BGMcBGIAEGI4FGJcFGNwEGN4EGOAE2AEDSK8OUOgGWOgGcAJ4AZABAJgBjAGgAYwBqgEDMC4xuAEDyAEA-AEB-AECqAIUwgIHECMY6gIYJ8ICExAAGIAEGIoFGOoCGLQCGEPYAQHCAhQQABiABBjjBBjpBBjqAhi0AtgBAcICFBAuGIAEGOMEGOkEGOoCGLQC2AEBwgIWEAAYAxiPARjlAhjqAhi0AhiMA9gBAuIDBBgAIEGIBgG6BgYIARABGAG6BgYIAhABGAu6BgYIAxABGBQ&sclient=gws-wiz-serp"  target="_blank" >primazia</a></strong> (CI 1.18), pois é dEle que vem o toda força para viver, mover e existir. Precisamos de uma Nova Reforma? Não!!! Precisamos viver o que já foi ensinado!
+                    </p> <hr>
+                </div>
+            </div>
+
+            <!-- Botão da VLibras -->
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
+
+            <!-- Botão para Rolar para o Topo -->
+            <button id="scrollToTopBtn" onclick="scrollToTop()"> 🡩 </button>
+
+            <div id="section" >
+                <h2 onclick="toggleSection('section1')"> <a name="sermao1"></a>
+                    Três qualificações do Cristão <hr>
+                </h2>
+                <div id="section1" class="section-content">
+                    <p>
+                        - (Rm 1.1-7) <br><br>
+                        Martinho Lutero, era monge agostiniano, o que já o definiria por sua posição teologicamente paulina. Era professor de teologia do NT, e ensinava, no ano de sua conversão, o livro de Romanos na Universidade de Wittenberg. Sua seriedade com as Escrituras o fazia cada vez mais procurar justificar-se diante de Deus. Cumpria as tradições romanistas do <strong><a href="https://www.google.com/search?q=sacramento+significado"  target="_blank" >Sacramento</a></strong> de <strong><a href="https://www.google.com/search?q=penit%C3%AAncia+significado+b%C3%ADblico&sca_esv=585881890&sxsrf=AM9HkKm-Ot6zXOjO9ZBm_4VQ0flYQlEqPQ%3A1701175943469&ei=h-JlZZmfHJuS5OUPi425qAQ&ved=0ahUKEwjZ_r2e3uaCAxUbCbkGHYtGDkUQ4dUDCBA&uact=5&oq=penit%C3%AAncia+significado+b%C3%ADblico&gs_lp=Egxnd3Mtd2l6LXNlcnAiIHBlbml0w6puY2lhIHNpZ25pZmljYWRvIGLDrWJsaWNvMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogRI9wxQmAhYxgpwAXgBkAEAmAGZAaABogKqAQMwLjK4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIHECMYsAIYJ-IDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp"  target="_blank" >Penitência</a></strong> continuamente, afim de receber perdão de pecados, mas cada vez mais se via um pecador contumaz.
+                        <br> <br>
+                        Foi nos preparos do livro de Romanos que ele teve seu grande encontro com Deus. Seus olhos abriram, ele viu quem era, e viu a graça manifesta no Evangelho, que é o Poder de Deus.
+                        <br> <br>
+                        Hoje com inicio do mês da <strong> <a href="https://www.google.com/search?q=reforma+protestante&oq=reforma+protestante&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORixAxiABDIKCAEQABixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIGCAYQRRg8MgYIBxBFGDzSAQgzNDU1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"  target="_blank" >Reforma</a></strong> (outubro), queremos expor algumas das verdades do livro de Romanos. A exposição completa deste livro daria com certeza mais de 6 meses, no entanto tentaremos expor primeiramente sobre as qualidades do Cristão, depois a corrupção humana, a graça justificadora, e libertos para cultuar a Deus servindo ao próximo.
+                        <br> <br>
+                        Precisamos salientar que o livro aos romanos teve seu enfoque principal: era expor quem ele era, o evangelho que ele pregue e posteriormente apontar a ajuda necessária para os irmãos da judeia. Ele saiu de Éfeso e foi passando por outras igrejas em várias localidades. Provavelmente ele escreveu está carta quando passava em Coríntios.
+                        <br> <br>
+                        Já neste primeiro momento da carta, que é a sua saudação e identificação, ele expõe detalhes sobre a fé cristã para que irmãos que ele não conhecia em Roma pudessem saber a verdade que ele vivia.
+                        <br> <br>
+                        Ele diz:
+                        <p class="identa"> <!-- Estilização de tópicos deixando uma identação -->
+                            1- A essência do Evangelho, das boas novas, o Cristo prometido nos profetas e em toda as Escrituras Sagradas. v. 1 <br>
+                            2- A encarnação do Filho de Deus, ele identifica a mesma abordagem <strong><a href="https://www.google.com/search?q=joanina+significado&sca_esv=585931027&sxsrf=AM9HkKkdImrkqKySXBF6MrtYnVdHIws8Ug%3A1701179663170&ei=D_FlZbHoCZOZ1sQP5L6QqAI&oq=joanina&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2pvYW5pbmEqAggCMgUQABiABDIKEAAYgAQYsQMYCjIFEAAYgAQyBRAAGIAEMgUQABiABDIKEC4YgAQYsQMYCjIHEAAYgAQYCjIFEC4YgAQyBxAAGIAEGAoyBxAAGIAEGApIrFNQjAdYyytwBHgBkAEAmAGfAaAB-wqqAQQwLjEwuAEDyAEA-AEBqAIUwgIHECMY6gIYJ8ICExAAGIAEGIoFGOoCGLQCGEPYAQHCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIOEC4YgAQYigUYsQMYgwHCAgoQABiABBiKBRhDwgIQEAAYgAQYigUYsQMYgwEYQ8ICEBAAGIAEGLEDGIMBGEYY_QHCAgoQLhiABBiKBRhDwgIOEAAYgAQYigUYsQMYgwHCAgsQLhiABBixAxiDAcICDRAAGIAEGIoFGLEDGEPCAggQLhiABBixA8ICBxAAGIAEGA3CAg0QLhiABBgNGMcBGK8BwgIKEAAYgAQYDRixA8ICDRAuGIAEGA0YsQMYsQPiAwQYACBBiAYBugYGCAEQARgB&sclient=gws-wiz-serp"  target="_blank" >joanina</a></strong>, o Verbo Encarnado, sua linhagem redentiva (descendente de Davi) e sua procedência (Filho de Deus) v. 2,3 <br>
+                            3- A ressurreição dos mortos, o poder de Deus para arrebatar do poder do pecado aqueles por quem Cristo morreu. v.4 <br>
+                            4- A fé que guia-nos a obediência a Lei v.5 <br>
+                            5- A certeza dos incluídos no números dos aceitos por Deus para pertencer a Jesus Cristo. v.6 <br>
+                            6- A prática de uma vida em conformidade com o chamado de Deus: santidade v.7<br> 
+                            </p>
+                        Diante deste <strong><a href="https://www.google.com/search?q=arcabou%C3%A7o&oq=arcabou%C3%A7o&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAtIBBzkxOGowajGoAgCwAgA&sourceid=chrome&ie=UTF-8"  target="_blank" >arcabouço</a></strong> da <strong><a href="https://www.google.com/search?q=per%C3%ADcope&oq=per%C3%ADcope&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCjMwNDgxOGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"  target="_blank" >perícope</a></strong>, quero destacar três qualidades do Cristão. Ela está na identificação que Paulo dá de si aos irmãos de Roma.
+                        <p class="identa">
+                            1 - Servo de Jesus Cristo – Doulos, ser servo é uma expressão que realmente não queremos ter sobre nós. Indica uma pessoa sem direito de vida, uma pessoa presa a um senhor, debaixo do jugo deste senhor. Paulo se identifica como servo de Jesus Cristo, isto implica que não vivia mais para si, mas para Cristo. Ser servo de Cristo é liberdade de nós mesmo, do mundo, do pecado, do diabo. Ele nós dá um jugo leve, suave. Ele dispõe aos seus servos dádivas eternas. <br> <br>
+                            2 - O chamado ao apostolado – Apóstolos, é alguém que é enviado com ordens a cumprir. Hoje não há mais apóstolos, pois sua era foi determinada por Deus para um período. Porem, o chamado a levar uma mensagem é dever todo cristão, neste sentido, todos devem ser apóstolos, levando a mensagem da Cruz, que Cristo morreu uma só vez para que todo aquele que nele crê não pereça, mas tenha a vida eterna. Somos chamados a ser mensageiros, carta escrita (2Co 3.2,3 “ós sois a nossa carta, escrita em nosso coração, conhecida e lida por todos os homens, estando já manifestos como carta de Cristo, produzida pelo nosso ministério, escrita não com tinta, mas pelo Espírito do Deus vivente, não em tábuas de pedra, mas em tábuas de carne, isto é, nos corações.”) 
+                            <br> <br>
+                            3- Separado para o evangelho – Não há outro termo melhor do que entender que há uma separação já presente no mundo: pecadores condenados e pecadores salvos. O cristão faz parte do segundo grupo. Deus separou-nos para Ele, a boas novas do evangelho foi para os cristãos, foi notícia que ardeu nos corações que responderam eficazmente ao chamado do Espírito Santo a verdade de Deus manifestada em Cristo Jesus.
+                        </p>
+                        O que precisamos aplicar diante da exposição hoje é: Você é servo de Deus? Você foi separado para Ele? Se sim você deve levar a mensagem da Cruz, ser um delegado, uma apostolo, não de título, mas marcado com as marcas de Cristo sobre você, para que outros possam se achegar a Deus.
+                    </p>
+                </div>
+            </div> <hr>
+
+            <div id="section" >
+            <!-- Segunda Seção, abre e fecha conteúdo -->
+                <h2 onclick="toggleSection('section2')"> <a name="sermao2">
+                    A real situação da humanidade <br> <hr>
+                </h2>
+                <!-- Conteúdo da Segunda Seção -->
+                <div id="section2" 
+                class="section-content">
+                    <p>
+                        - (Rm 3.23)
+                        <br><br>
+                        Uma das singularidades da <strong> <a href="https://www.google.com/search?q=reforma+protestante&oq=reforma+protestante&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORixAxiABDIKCAEQABixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIGCAYQRRg8MgYIBxBFGDzSAQgzNDU1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"  target="_blank" >Reforma</a></strong> foi a notoriedade que deram ao termo difundido por <strong><a href="https://www.google.com/search?q=agostinho+de+hipona&sca_esv=585953107&ei=DwRmZfTVN7D85OUPksCQgAk&gs_ssp=eJzjYtfP1TcoNys3YPQSTkzPLy7JzMvIV0hJVcjILMjPSwQAkRgKEw&oq=agost&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWFnb3N0KgIIADINEC4YsQMYgAQYigUYQzIIEC4YgAQYsQMyChAAGIAEGIoFGEMyCBAAGIAEGLEDMggQABiABBixAzIKEAAYgAQYigUYQzIFEAAYgAQyBRAAGIAEMgUQABiABDIIEAAYgAQYsQMyHBAuGLEDGIAEGIoFGEMYlwUY3AQY3gQY4ATYAQVIyDtQ_A5Y-SNwAngBkAEAmAGKAaAB4QWqAQMwLja4AQPIAQD4AQGoAhTCAgoQABhHGNYEGLADwgINEAAYgAQYigUYsAMYQ8ICDhAAGOQCGNYEGLAD2AEBwgITEC4YgAQYigUYyAMYsAMYQ9gBAsICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMYgwEYxwEY0QPCAgQQABgDwgIOEC4YgAQYigUYsQMYgwHCAg4QABiABBiKBRixAxiDAcICExAuGIAEGIoFGOoCGLQCGEPYAQPCAhMQABiABBiKBRjqAhi0AhhD2AEDwgIWEAAYAxiPARjlAhjqAhi0AhiMA9gBBMICFhAuGAMYjwEY5QIY6gIYtAIYjAPYAQTCAgoQLhiABBiKBRhDwgILEC4YgwEYsQMYgATCAgsQLhiABBixAxiDAcICDRAuGIAEGIoFGNQCGEPCAgUQLhiABMICFBAuGIAEGIoFGLEDGIMBGMcBGNEDwgIZEC4YgAQYigUYQxiXBRjcBBjeBBjgBNgBBeIDBBgAIEGIBgGQBhO6BgYIARABGAm6BgYIAhABGAi6BgQIAxgHugYGCAQQARgKugYGCAUQARgU&sclient=gws-wiz-serp"  target="_blank" >Agostinho</a></strong> sobre pecado original. Ao contrário disto, vemos em todas as culturas e religiões uma tensão muito grande quanto ao que fazem, e se isto for contra sua “moral” é pecado. Eles dão vazão ao ato pecaminoso e não ao cerne do problema daquele ato: o ser humano, o pecador, o que não consegue ser justo.
+                        <br> <br>
+                        É por isso que as religiões falsas podem aprisionar o homem, eles estão preocupados com o comportamento, e não quem é a pessoa. Todo levante da sabedoria humana, e está manchada por quem é o homem, é para resolver o comportamento, e não quem é o homem.
+                        <br> <br>
+                        <strong><a href="https://www.google.com/search?q=joao+calvino&oq=joao+calvino&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDQ1OThqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8"  target="_blank" >Calvino</a></strong> escreveu nas <strong><a href="https://www.google.com/search?q=institutas&sca_esv=585953107&ei=MAVmZcCZEsK85OUP5t-HgA4&ved=0ahUKEwjA8bCl_-aCAxVCHrkGHebvAeAQ4dUDCBA&uact=5&oq=institutas&gs_lp=Egxnd3Mtd2l6LXNlcnAiCmluc3RpdHV0YXMyBRAuGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMhQQLhiABBiXBRjcBBjeBBjgBNgBA0igKFDmBliTHHABeAGQAQCYAfQBoAGvCqoBBTEuOC4xuAEDyAEA-AEBqAIUwgITEC4YgAQYigUY6gIYtAIYQ9gBAcICExAAGIAEGIoFGOoCGLQCGEPYAQHCAhYQABgDGI8BGOUCGOoCGLQCGIwD2AECwgIWEC4YAxiPARjlAhjqAhi0AhiMA9gBAsICCxAAGIAEGLEDGIMBwgIKEC4YgAQYigUYQ8ICCxAuGIAEGMcBGNEDwgIUEC4YgAQYigUYsQMYgwEYxwEYrwHCAggQLhixAxiABMICChAAGIAEGIoFGEPCAhEQLhiABBixAxiDARjHARivAcICDhAAGIAEGIoFGLEDGIMBwgILEC4YgAQYxwEYrwHiAwQYACBBiAYBugYECAEYB7oGBggCEAEYCroGBggDEAEYFA&sclient=gws-wiz-serp"  target="_blank" >Institutas</a></strong> que o homem quando se empenha em conhecer a si mesmo, acaba a conhecendo Deus, e ao empreender a conhecer a Deus, pois está é a necessidade real do homem, passa a ver-se como realmente é: alguém carente de Deus, alguém destituído da glória do Criador, morto sem seus delitos; precisa de Deus desesperadamente, e só entenderá a si mesmo, ao mergulhar na dependência daquele que sonda a mente e o coração (Sl 139), daquele que pode desvendar pela sua Palavra os propósitos do coração humano (Hb 4.12); daquele que, como Bom Oleiro, pode refazer do pó e das cinzas dum enlameado pelo pecado (Sl 40.2 “Tirou-me de um poço de perdição, de um tremedal de lama; colocou-me os pés sobre uma rocha e me firmou os passos.”; 69.2 “Estou atolado em profundo lamaçal, que não dá pé; estou nas profundezas das águas, e a corrente me submerge.”), a ser um vaso de honra. (Is 64.8 “Mas agora, ó Senhor, tu és nosso Pai, nós somos o barro, e tu, o nosso oleiro; e todos nós, obra das tuas mãos.”; Rm 9.21 “Ou não tem o oleiro direito sobre a massa, para do mesmo barro fazer um vaso para honra e outro, para desonra?”).
+                        <br> <br>
+                        Quero discorrer um pouco sobre o texto anterior ao nosso texto base para está mensagem, com o intuito de tentar mostrar nossa real situação.
+                        <p class="identa">
+                            1- A ira de Deus é revelada em sua obra – Rm 1.18 – A obra criada do Senhor dá testemunho dEle, mas este testemunho condena todos os homens (19,20). <br>
+                            a. Não glorificam a Deus v.21 a <br>
+                            b. Suas inteligências são obscuras e nulas v.21b cf. 22 <br>
+                            c. Mudaram a gloria de Deus – idolatria humanista, v.23 <br>
+                            d. Deus os entregou à perversidade sexual e desejos lascivos v.24 <br>
+                            e. Mudaram a verdade de Deus em mentira v.25 <br>
+                            f. Paixões distorcidas e perversa v;26. 27 <br>
+                            <br>
+                            2- Pior que tudo é ser entregue ao nosso próprio desejo v.28 <br>
+                            a. Disposição mental reprovável v.28b <br>
+                            b. Praticas inconvenientes v.28c <br>
+                            c. Todo tipo de injustiça e maldade v.29 <br>
+                            d. <strong><a href="https://www.google.com/search?q=blasfema&sca_esv=585953107&ei=oAZmZYvlL9TC5OUP2MyC2AM&oq=blasfema&gs_lp=Egxnd3Mtd2l6LXNlcnAiCGJsYXNmZW1hKgIIATIIEAAYgAQYsQMyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgoQABiABBiKBRhDMgUQABiABEi9K1CkBljAGXACeAGQAQCYAX2gAYEIqgEDMC45uAEDyAEA-AEBqAITwgIgEAAYgAQYigUY5QIY5QIY6gIYtAIYigMYtwMY1APYAQHCAhYQABgDGI8BGOUCGOoCGLQCGIwD2AECwgIWEC4YAxiPARjlAhjqAhi0AhiMA9gBAsICCxAuGIMBGLEDGIAEwgIREC4YgAQYsQMYgwEYxwEY0QPCAgsQABiABBixAxiDAcICCBAuGIAEGLEDwgILEC4YgAQYsQMYgwHCAg4QABiABBiKBRixAxiDAcICGhAuGIMBGLEDGIAEGJcFGNwEGN4EGOAE2AEDwgIKEC4YgAQYigUYQ8ICDhAuGIAEGLEDGMcBGNEDwgIQEAAYgAQYigUYsQMYgwEYQ8ICDRAAGIAEGLEDGIMBGArCAgUQLhiABMICBxAAGIAEGArCAgcQLhiABBgKwgIEEAAYA-IDBBgAIEGIBgG6BgQIARgHugYGCAIQARgKugYGCAMQARgU&sclient=gws-wiz-serp"  target="_blank" > Blasfema</a></strong> e rejeição do Criador v.30a <br>
+                            e. Males sociais v.30b <br>
+                            f. Insanidade e perda de afeição v.31
+                            <br> <br>
+                            3- A condenação é para todas as raças Rm 2
+                            <br> <br>
+                            4- Destituídos da gloria Rm 3 <br>
+                            a. Não justo, toda justiça humana é nada, é sem gloria (vv.9-18) <br>
+                            b. Não há diferença se é judeu ou grego (v.19,20)
+                            <br> <br>
+                            5- A Justificação vem pela fé no Cristo v.24 cf. Rm 4 <br>
+                            a. O PACTO aceito por Deus v.25 <br>
+                            b. A Fé é o dom pra a entrada no PACTO v.27,28 <br>
+                            c. Muitos serão justificados, tanto judeu com grego v.29 cf Rm 4 <br>
+                            d. A lei é para ser vivida por fé v.31 cf. Rm 4. <br>
+                        </p>
+                        Aplicação
+                        <br> <br>
+                        Nossa situação como visto não é boa! Você e eu temos que tomar conhecimento do mal que temos feito a Deus por andar por nós mesmo, por tentar sempre se auto justificar, por amarmos mais os nossos deleites do que a gloria de Deus.
+                        <br> <br>
+                        Devemos entender que a busca incessante da satisfação sem que ela parte de Deus nos guiando em sua Santa vontade, será um poço sem água que quanto mais cavarmos seremos levado ao desespero completo.
+                        <br> <br>
+                        Mas que a alegria é a gloria proposta em Cristo que justifica a todo aquele que se aproxima dEle por fé, por entrega total e resoluta. Você quer sair da mesmice, do desespero, da insatisfação e encontra o Rio de Vida? 
+                    </p>
+                </div>
+            </div> <hr>
+
+            <div id="section" >
+            <!-- Terceira Seção, abre e fecha conteúdo -->
+                <h2 onclick="toggleSection('section3')"> <a name="sermao3"></a>
+                    A Graça Justificadora <br> <hr>
+                </h2>
+                <!-- Conteúdo da Terceira Seção -->
+                <div id="section3" class="section-content">
+                    <p> 
+                        - (Rm 5.1-11)
+                        <br><br>
+                        Algo se perdeu com a era medieval: embora a igreja se tornara um império, não imperou a verdade do evangelho. A humanidade perdeu seu referencial de quem a criou.
+                        <br> <br>
+                        Também se perdeu o sentido de quem somos por causa de Cristo.
+                        <br> <br>
+                        Nada diferente do período medieval é o nosso tempo hoje. A barbárie da sociedade modernizada é pior que as trevas promulgadas pela Igreja Romana. O caos ideológico, moral e religioso é devastador em nossos dias. Precisamos de uma ação de Deus sobre nós para voltarmos a ver esperança e andarmos em alegria verdadeira. E esta ação já está revelada nas Escrituras: Cristo o justificador dos eleitos.
+                        <br> <br>
+                        Está disposição somente Deus concede e pasmem: gratuitamente no Amado. Graça, graça justificadora. Que nos leva a presença do Santo.
+                        <br> <br>
+                        Hoje tentaremos expor um pouco sobre a graça que nos justificou. Mas justificar de quê? Ou o que é justificação?
+                        <br> <br>
+                        Nossa confissão de fé nos ensina que a justificação é o ato pelo qual “Deus, desde toda a eternidade, decretou justificar todos os eleitos; e Cristo, no cumprimento do tempo, morreu pelos pecados deles e ressuscitou para a justificação deles; contudo, eles não são justificados até que o Espírito Santo, no tempo próprio e de fato, comunica-lhes Cristo.”
+                        <br> <br>
+                        Jesus disse na Cruz: “Está consumado” – ele pagou o preço da nossa ofensa a Deus. O castigo que nos trouxe paz. Ele declarou algo poderoso para o nosso bem, ele nos justificou.
+                        <br> <br>
+                        O que nossa confissão de fé ensina nada mais é que interpretação da obra de Cristo sobre os seus. Jesus disse horas antes da sua morte, da crucificação, da prisão: “Santifica-os na verdade, a tua palavra é a verdade” (Jo 17.17).
+                        <br> <br>
+                        Agora vemos o nosso texto expressando primariamente: “temos paz com Deus”. Por que paz com Deus?
+                        <br> <br>
+                        Entendamos o contexto:
+                        <br> <br>
+                        No capitulo 4, Paulo apresentou que Abraão foi justificado pela fé. Ele é o testemunho de que os crentes do AT foram justificados não pela lei, mas pela fé. A lei revela quem somos, e a necessidade que temos que um Justificador. Ela aponta para a Esperança, e está é firmada no Messias; Abraão creio e isto foi imputado para sua justificação.
+                        <br> <br>
+                        Nos capítulos posteriores até o oitavo de Romanos, Paulo mostra que a fé em Cristo quebra os grilhões do pecado (6.14), podemos resistir o pecado não em nós mesmo, mas naquele que vive em nós (6.4-8 cf. Gl 2.20), uma novidade de vida, uma nova vida.
+                        <br> <br>
+                        Ele ainda expõe que há uma luta dentro de nós, que no presente momento não divorcio dela, não tem como separa espiritual e a nossa carne, mas estar envolvido, preso, na graça nos faz vencedores sobre os desejos carnais que nos escravizaram para morte, e ainda tenta fazer-nos escravos dela.
+                        <br> <br>
+                        E ele traz a magnitude desta graça justificadora: não há mais condenação (Rm 8.1). Ele afirma que o Espirito da vida que nos libertou do jugo do pecado nos conduz, dá-nos segurança de que conseguiremos vencer, pois como Cristo ressuscitou, o Espirito que nos foi dado, é garantia de sermos vivificados em nossa carne (8.11). Ainda, este mesmo Espirito dá total assistência em nossa fraqueza e intercede por nós (8.26), conformando-nos a vontade de Deus para o proposito da nossa criação, que é redimida em Jesus.
+                        <br> <br>
+                        Sendo isto posto, vamos a algumas aplicações do texto base de nossa predica:
+                        <br> <br>
+                        - a Justificação pela fé é obra graciosa de Deus em Cristo
+                        <br> <br>
+                        - esta graça justificadora nos apazigua com Deus que está irado pela corrupção humana (1.18 cf 5.1,9)
+                        <br> <br>
+                        - ela muda nossa condição de perdidos para amados de Deus (5.8)
+                        <br> <br>
+                        - ela vem para gerar algo que estava ou está perdido em nós: perseverança, experiência, esperança. E isto foi garantido pela doação do Espirito Santo.
+                        <br> <br>
+                        O que você vai fazer com isto?
+                        <br> <br>
+                        Quais atitudes você poderá tomar agora?
+                        <br> <br>
+                        Até quando você tentará fazer algo para ser aceito pelos outros ou por Deus, achando que pode se justificar? Deus é quem opera isto gratuitamente para que você possa viver uma vida em abundância nEle.
+                    </p>
+                </div>
+            </div> <hr>
+
+            <div id="section" >
+            <!-- Quarta e última Seção, abre e fecha conteúdo -->
+                <h2 onclick="toggleSection('section4')"> <a name="sermao4"></a>
+                    Libertos para cultuar a Deus servindo ao próximo <br> <hr>
+                </h2>
+                <!-- Conteúdo da Quarta Seção -->
+                <div id="section4" class="section-content">
+                    <p>
+                        - Rm 12.1 (Rm 12 a 15)
+                        <br> <br>
+                        No tempo presente qual o significado de sermos livres do domínio do pecado?
+                        <br> <br>
+                        Paulo após expor sobre a situação da humanidade, sua perdição e condição vil, discorrendo sobre a graça justificadora, ele volta ao dever de todo homem: dar glória a Deus.
+                        <br> <br>
+                        Na <a href="https://www.google.com/search?q=per%C3%ADcope&amp;oq=per%C3%ADcope&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCjMwNDgxOGowajeoAgCwAgA&amp;sourceid=chrome&amp;ie=UTF-8" target="_blank">perícope</a> do capitulo 11.33-36, temos o salmo paulino, uma exaltação de adoração a grandiosa sabedoria de Deus. Sabedoria esta para resgatar o perdido.
+                        <br> <br>
+                        Na proposta de hoje, queremos trabalhar algo que nos leve a adoração ao Senhor e ao serviço a Ele servindo o próximo.
+                        <br> <br>
+                        Deixe-nos lembrar da intenção da carta aos Romanos. Paulo estava para ir numa empreitada evangelística a Espanha. Ele diz no capitulo 15.23,24, que já não lhe havia campo para evangelizar. O nome de Jesus era conhecido em vários lugares, pois ele próprio se empenhou em falar do amor de Cristo. E que o seu intento era chegar a Espanha. No entanto, ele voltaria a Jerusalém para servir os santos. Os irmãos da Macedônia e Acaia levantaram uma oferta para cuidar dos irmãos que se empobreceram devida as perseguições em Jerusalém.
+                        <br> <br>
+                        Paulo conclama a todos a ajudar os necessitados. E após ele levar este socorro, então sim, irá a Espanha (v.28).
+                        <br> <br>
+                        No verso que lemos tem um imperativo que nos levar a ter atenção no culto a Deus: Rogo-vos. Diante de quem Deus é, de como éramos, e como Ele nos redimiu, precisamos nos apresentar diante dEle com interessa do nosso ser, pensando, sentido e agindo diante do Senhor, culto racional.
+                        <br> <br>
+                        Sendo assim queremos rapidamente propor que fomos libertos do domínio do pecado para cultuar a Deus e servir o próximo. Como isto pode se processar:
+                        <p class="identa">
+                            1 - Na unidade da igreja exercer vários serviços para o bem de todos – 12.3-8 <br>
+                            a. Nada de vanglória – v.3 <br>
+                            b. Importância da multifunções no corpo – v.4-8 <br>
+                            <br>
+                            2 - Viver na prática do verdadeiro amor – 12.9-21 <br>
+                            a. Amor verdadeiro foge do mal e se apega ao bem – v. 9 <br>
+                            b. Cordialidade e honra uns aos outros – v.10 <br>
+                            c. Zelosos e incendiados no serviço ao Senhor – v.11 <br>
+                            d. Cuidados e boa recepção – v.13-15 <br>
+                            e. Não vingativos – v.17-21 <br>
+                            <br>
+                            3 - Respeito a autoridades – v.13.1-7
+                            <br> <br>
+                            4 - Obedecer é cumprir o mandamento de amar o próximo – 13.8-10.
+                            <br> <br>
+                            5 - Lembrar-se da vinda do Senhor – 13.11-14 <br>
+                            a. Não somos da noite e sim do dia <br>
+                            b. Deixar as obras das trevas <br>
+                            c. Revestir-nos do Senhor Jesus. <br>
+                            <br>
+                            6 - Detalhes dos procedimentos com quem é menos sábio – cap. 14
+                            <br> <br>
+                            7 - A base do nosso cuidado ao irmão é o acolhimento que Cristo nos fez – cap.15
+                        </p>
+                        Hoje não teríamos como entrar em detalhes de todos os deveres. Mas o enfoque aqui é que se você quer servir a Deus, você é chamado a envolver-se com a igreja. Sem isto, você não estará cumprindo o chamado de ser cristão. Você deve, precisa, parar de olhar para si mesmo e ver o outro. Perceber o outro. Amar o outro. O nosso culto será inteligível e aceito por Deus, se realmente voltarmos todos nós para o compromisso ao Senhor, servindo-O por meio do irmão, do próximo. Nosso culto não é um fim em nós mesmo, mas um movimento ao outro, até ver Cristo formado em cada um de nós (“meus filhos, por quem, de novo, sofro as dores de parto, até ser Cristo formado em vós” Gl 4.19). Lembrem-se: Ele nos amou, nos perdoou quando ainda éramos pecadores.
+                    <hr></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    <!-- Rodapé da Página -->
+        <section>
+            <!-- Seção do conteúdo "Sobre Nós" -->
+            <h2><a name="sobre"></a>Sobre Nós</h2>
+            <p> Site feito por cristãos da Igreja Presbiteriana do Brasil. </p>
+            <p>&copy; 2023 Ecclesia Reformata </p>
+        </section>
+
+        <section>
+            <!-- Seção do conteúdo "Contato" -->
+            <h2><a name="contato"></a>Entre em Contato</h2>
+            <p>Email: exemplo@dominio.com</p>
+            <p>Telefone: +55 (31) 91234-5678 </p>
+        </section>
+    </footer>
+
+     <!-- Script e Bootstrap da VLibras  -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget();
+    </script>
+    <!-- Outros bootstraps -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>
+    <!-- Nosso Script -->
+    <script src="src/js/script.js"></script>
+
+</body>
+</html>
